@@ -7,3 +7,10 @@ vars = { ENVIRONMENT = "development" }
 
 [env.production]
 vars = { ENVIRONMENT = "production" }
+
+# D1 Database configuration (add database_id when created)
+[[d1_databases]]
+binding = "DB"
+database_name = "picshare-db"
+database_id = "dcbdc916-0a81-43c1-857e-1ecd82980093"
+migrations_dir = "migrations"

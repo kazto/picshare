@@ -2,11 +2,20 @@
   "name": "backend",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250726.0",
     "@types/bcryptjs": "^3.0.0",
     "@types/bun": "latest",
     "@types/jsonwebtoken": "^9.0.10",
+    "@vitest/ui": "^3.2.4",
+    "vitest": "^3.2.4",
     "wrangler": "^4.26.0"
   },
   "peerDependencies": {
